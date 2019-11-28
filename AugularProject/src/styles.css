@@ -5,3 +5,14 @@
 body{
     background-color: #cccccc;
 }
+
+h1 {
+    font-size: 5em;
+    text-align: center;
+}
+
+div.card {
+    margin-left: 250px;
+    margin-top: 50px;
+    float: left;
+}
