@@ -3,14 +3,22 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { SearchresultsComponent } from './searchresults/searchresults.component';
+import { RouterModule } from '@angular/router'
+import { TvComponent } from './tv_shows/tv.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SearchresultsComponent
+    SearchresultsComponent, TvComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule, RouterModule.forRoot([
+      {path: 'app', component: SearchresultsComponent},
+      {path: 'movies', component: SearchresultsComponent},
+      {path: 'tv', component: TvComponent},
+      {path: '', redirectTo: 'app', pathMatch: 'full'},
+      {path: "**", redirectTo: 'app', pathMatch: 'full'}
+    ])
   ],
   providers: [],
   bootstrap: [AppComponent]
