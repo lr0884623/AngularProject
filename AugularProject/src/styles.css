@@ -17,9 +17,10 @@ text-align: center;
 
 
 div.card {
-    margin-left: 200px;
+    margin-left: 150px;
     margin-top: 45px;
-    float: left;
+    /*clear: left;
+    float: left;*/
     border-radius: 15px;
     box-shadow: 10px 10px 5px grey;
     
