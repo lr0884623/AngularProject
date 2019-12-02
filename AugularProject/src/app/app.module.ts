@@ -6,6 +6,7 @@ import { SearchresultsComponent } from './searchresults/searchresults.component'
 import { RouterModule } from '@angular/router'
 import { TvComponent } from './tv_shows/tv.component';
 import { MovieComponent } from './movies/movies.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,7 @@ import { MovieComponent } from './movies/movies.component';
     SearchresultsComponent, TvComponent, MovieComponent
   ],
   imports: [
-    BrowserModule, RouterModule.forRoot([
+    BrowserModule, RouterModule, HttpClientModule, RouterModule.forRoot([
       {path: 'app', component: SearchresultsComponent},
       {path: 'movies', component: MovieComponent},
       {path: 'tv', component: TvComponent},
