@@ -1,4 +1,4 @@
-export interface ITv{
+export interface ITvs{
     original_name: string;
       genre_ids: [number];
       name: string;

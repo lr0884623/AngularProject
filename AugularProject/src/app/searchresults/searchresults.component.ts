@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   templateUrl: './searchresults.component.html'
 })
 export class SearchresultsComponent {
-  public pageTitle = 'Welcome';
+ 
 }
 
 
