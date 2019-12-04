@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { ITvs } from '../second_product_inter';
-import { TvService } from '../tv.service';
+//import { TvService } from '../tv.service';
+import { MovieService } from '../app.service';
 
 
 @Component({
@@ -9,12 +10,12 @@ import { TvService } from '../tv.service';
 export class TvComponent {
   shows: ITvs[] = [];
 
-  constructor(private tvService: TvService){
+  constructor(private movieService: MovieService){
   }
 
   ngOnInit() : void {
 
-    this.tvService.getTv().subscribe(tvObserved => {
+    this.movieService.getTv().subscribe(tvObserved => {
       this.shows = tvObserved;
     })
 
