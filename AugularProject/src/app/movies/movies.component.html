@@ -1,30 +1,33 @@
 
 
 <h1>Movies</h1>
+<!--*ngFor="let movie of IMovies" -->
+
+
+
+<div class="card" style="width: 18rem;" >
+  
+  <img src="https://image.tmdb.org/t/p/w300/qdfARIhgpgZOBh3vfNhWS4hmSo3.jpg" class="card-img-top">
+  <div class="card-body" >
+    <h5 class="card-title">{{movies.results[0].title}}</h5>
+    <p class="card-text">Release date: {{movies.results[0].release_date}}</p>
+    <p class="card-text">{{movies.results[0].overview}}</p>
+  </div>
+</div>
 
 <div class="card" style="width: 18rem;">
   
-    <img src="https://image.tmdb.org/t/p/w300/qdfARIhgpgZOBh3vfNhWS4hmSo3.jpg" class="card-img-top" alt="">
-    <div class="card-body">
-      <h5 class="card-title">{{movies.results[0].title}}</h5>
-      <p class="card-text">Release date: {{movies.results[0].release_date}}</p>
-      <p class="card-text">{{movies.results[0].overview}}</p>
-    </div>
+  <img src="https://image.tmdb.org/t/p/w300/mbm8k3GFhXS0ROd9AD1gqYbIFbM.jpg" class="card-img-top" alt="">
+  <div class="card-body">
+    <h5 class="card-title">{{movies.results[1].title}}</h5>
+    <p class="card-text">Release date: {{movies.results[1].release_date}}</p>
+    <p class="card-text">{{movies.results[1].overview}}</p>
   </div>
-
-  <div class="card" style="width: 18rem;">
-  
-    <img src="https://image.tmdb.org/t/p/w500/mbm8k3GFhXS0ROd9AD1gqYbIFbM.jpg" class="card-img-top" alt="">
-    <div class="card-body">
-      <h5 class="card-title">{{movies.results[1].title}}</h5>
-      <p class="card-text">Release date: {{movies.results[1].release_date}}</p>
-      <p class="card-text">{{movies.results[1].overview}}</p>
-    </div>
-  </div>
+</div>
 
   <div class="card" style="width: 18rem;" >
   
-    <img src="https://image.tmdb.org/t/p/w500/zfE0R94v1E8cuKAerbskfD3VfUt.jpg" class="card-img-top" alt="">
+    <img src="https://image.tmdb.org/t/p/w300/zfE0R94v1E8cuKAerbskfD3VfUt.jpg" class="card-img-top" alt="">
     <div class="card-body">
       <h5 class="card-title">{{movies.results[2].title}}</h5>
       <p class="card-text">Release date: {{movies.results[2].release_date}}</p>
@@ -34,7 +37,7 @@
 
   <div class="card" style="width: 18rem;" >
   
-    <img src="https://image.tmdb.org/t/p/w500/vqzNJRH4YyquRiWxCCOH0aXggHI.jpg" class="card-img-top" alt="">
+    <img src="https://image.tmdb.org/t/p/w300/zBhv8rsLOfpFW2M5b6wW78Uoojs.jpg" class="card-img-top" alt="">
     <div class="card-body">
       <h5 class="card-title">{{movies.results[3].title}}</h5>
       <p class="card-text">Release date: {{movies.results[3].release_date}}</p>
@@ -42,9 +45,9 @@
     </div>
   </div>
 
-  <div class="card" style="width: 15rem;" >
+  <div class="card" style="width: 18rem;" >
   
-    <img src="https://image.tmdb.org/t/p/w500/zBhv8rsLOfpFW2M5b6wW78Uoojs.jpg" class="card-img-top" alt="">
+    <img src="https://image.tmdb.org/t/p/w300/vqzNJRH4YyquRiWxCCOH0aXggHI.jpg" class="card-img-top" alt="">
     <div class="card-body">
       <h5 class="card-title">{{movies.results[4].title}}</h5>
       <p class="card-text">Release date: {{movies.results[4].release_date}}</p>
@@ -54,7 +57,7 @@
 
   <div class="card" style="width: 18rem;">
   
-    <img src="https://image.tmdb.org/t/p/w500/kTQ3J8oTTKofAVLYnds2cHUz9KO.jpg" class="card-img-top" alt="">
+    <img src="https://image.tmdb.org/t/p/w300/jyw8VKYEiM1UDzPB7NsisUgBeJ8.jpg" class="card-img-top" alt="">
     <div class="card-body">
       <h5 class="card-title">{{movies.results[5].title}}</h5>
       <p class="card-text">Release date: {{movies.results[5].release_date}}</p>

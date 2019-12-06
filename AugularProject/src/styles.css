@@ -17,6 +17,7 @@ text-align: center;
 
 
 div.card {
+     /*display:inline-block;*/
     margin-left: 250px;
     margin-top: 45px;
     /*clear: left;*/
