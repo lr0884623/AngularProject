@@ -11,10 +11,10 @@ import { IMovies } from '../products_inter';
 export class SearchresultsComponent {
   shows: ITvs[] = [];
   movies: IMovies[] = [];
-
+//implements the service we created for both movie and tv shows
   constructor(private movieService: MovieService){
   }
-
+//implements both the functions
   ngOnInit() : void {
 
     this.movieService.getMovies().subscribe(prodObserved => {

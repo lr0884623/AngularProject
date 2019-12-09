@@ -9,7 +9,7 @@ import { MovieService } from '../app.service';
 })
 export class TvComponent {
   shows: ITvs[] = [];
-
+//implements our service in this component
   constructor(private movieService: MovieService){
   }
 

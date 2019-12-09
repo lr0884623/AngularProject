@@ -1,5 +1,5 @@
 export interface IMovies{
-
+//makes one of the interfaces for the movie data
     popularity: number;
     vote_count: number;
    

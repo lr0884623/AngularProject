@@ -1,3 +1,5 @@
+
+//makes the other interface for the tv data
 export interface ITvs{
     original_name: string;
       genre_ids: [number];

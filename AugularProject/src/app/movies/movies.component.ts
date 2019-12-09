@@ -7,10 +7,10 @@ import { MovieService } from '../app.service';
 })
 export class MovieComponent {
   movies: IMovies[] = [];
-
+//implements the service we created
   constructor(private movieService: MovieService){
   }
-
+//implements the function created
   ngOnInit() : void {
 
     this.movieService.getMovies().subscribe(prodObserved => {
