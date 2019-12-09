@@ -4,7 +4,7 @@
 
 <div class="card" style="width: 18rem;">
   
-    <img src="https://image.tmdb.org/t/p/w300/BbNvKCuEF4SRzFXR16aK6ISFtR.jpg" class="card-img-top" alt="">
+    <img [src] = "'https://image.tmdb.org/t/p/w300'+ shows.results[0].poster_path" class="card-img-top" alt="">
     <div class="card-body">
       <h5 class="card-title">{{shows.results[0].name}}</h5>
       <p class="card-text">Air date: {{shows.results[0].first_air_date}}</p>
@@ -14,7 +14,7 @@
 
   <div class="card" style="width: 18rem;">
   
-    <img src="https://image.tmdb.org/t/p/w300/qJdfO3ahgAMf2rcmhoqngjBBZW1.jpg" class="card-img-top" alt="">
+    <img [src] = "'https://image.tmdb.org/t/p/w300'+ shows.results[1].poster_path" class="card-img-top" alt="">
     <div class="card-body">
       <h5 class="card-title">{{shows.results[1].name}}</h5>
       <p class="card-text">Air date: {{shows.results[1].first_air_date}}</p>
@@ -24,7 +24,7 @@
 
   <div class="card" style="width: 18rem;">
   
-    <img src="https://image.tmdb.org/t/p/w300/aq2yEMgRQBPfRkrO0Repo2qhUAT.jpg" class="card-img-top" alt="">
+    <img [src] = "'https://image.tmdb.org/t/p/w300'+shows.results[2].poster_path" class="card-img-top" alt="">
     <div class="card-body">
       <h5 class="card-title">{{shows.results[2].name}}</h5>
       <p class="card-text">Air date: {{shows.results[2].first_air_date}}</p>
@@ -34,7 +34,7 @@
 
   <div class="card" style="width: 18rem;">
   
-    <img src="https://image.tmdb.org/t/p/w300/gKG5QGz5Ngf8fgWpBsWtlg5L2SF.jpg" class="card-img-top" alt="">
+    <img [src] = "'https://image.tmdb.org/t/p/w300'+shows.results[3].poster_path" class="card-img-top" alt="">
     <div class="card-body">
       <h5 class="card-title">{{shows.results[3].name}}</h5>
       <p class="card-text">Air date: {{shows.results[3].first_air_date}}</p>
@@ -44,7 +44,7 @@
 
   <div class="card" style="width: 18rem;">
   
-    <img src="https://image.tmdb.org/t/p/w300/xOjRNnQw5hqR1EULJ2iHkGwJVA4.jpg" class="card-img-top" alt="">
+    <img [src] = "'https://image.tmdb.org/t/p/w300'+ shows.results[4].poster_path" class="card-img-top" alt="">
     <div class="card-body">
       <h5 class="card-title">{{shows.results[4].name}}</h5>
       <p class="card-text">Air date: {{shows.results[4].first_air_date}}</p>
@@ -54,7 +54,7 @@
 
   <div class="card" style="width: 18rem;">
   
-    <img src="https://image.tmdb.org/t/p/w300/wHa6KOJAoNTFLFtp7wguUJKSnju.jpg" class="card-img-top" alt="">
+    <img [src] = "'https://image.tmdb.org/t/p/w300'+shows.results[5].poster_path" class="card-img-top" alt="">
     <div class="card-body">
       <h5 class="card-title">{{shows.results[5].name}}</h5>
       <p class="card-text">Air date: {{shows.results[5].first_air_date}}</p>

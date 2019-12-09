@@ -34,3 +34,13 @@ a, a:hover {
 div.card img {
     border-radius: 15px;
 }
+
+div#crazy {
+    top: -750px;
+}
+
+h3#maintitle {
+    float: left;
+    margin-left: -250px;
+}
+

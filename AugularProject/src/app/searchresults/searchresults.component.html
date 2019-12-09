@@ -6,7 +6,7 @@
 <a [routerLink]="['/movies']" class="nav-link">
   <div class="card" style="width: 18rem;">
   
-        <img src="https://image.tmdb.org/t/p/w300/qdfARIhgpgZOBh3vfNhWS4hmSo3.jpg" class="card-img-top" alt="">
+        <img [src] = "'https://image.tmdb.org/t/p/w300'+movies.results[0].poster_path" class="card-img-top" alt="">
         <div class="card-body">
           <h5 class="card-title">{{movies.results[0].title}}</h5>
           <p class="card-text">Release date: {{movies.results[0].release_date}}</p>
@@ -14,10 +14,12 @@
         </div>
       </div>
     </a>
+   <h3 id ="maintitle">Current movies</h3> 
+   <h3>Current tv shows</h3>
    
-      <a [routerLink]="['/tv']" class="nav-link">
+      <a [routerLink]="['/tv']" class="nav-link" id="second">
         <div class="card" style="width: 18rem;">
-            <img src="https://image.tmdb.org/t/p/w300/BbNvKCuEF4SRzFXR16aK6ISFtR.jpg" class="card-img-top" alt="">
+            <img [src] = "'https://image.tmdb.org/t/p/w300'+ shows.results[0].poster_path" class="card-img-top" alt="">
             <div class="card-body">
               <h5 class="card-title">{{shows.results[0].name}}</h5>
               <p class="card-text">Air date: {{shows.results[0].first_air_date}}</p>
@@ -26,4 +28,4 @@
             </div>
           </div></a>
 
-          
+         
